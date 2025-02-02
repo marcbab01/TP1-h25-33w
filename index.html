@@ -1,90 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Principal</title>
     <link rel="stylesheet" href="assets/scss/style.css">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="entete global">
-            <figure>
-                <img src="assets/img/logo-img.jpg" alt="" class="entete__logo">
-            </figure>
-            <div class="entete__nav">
-                <nav class="entete__menu">
-                    <ul class="menu">
-                        <li class="menu__li">
-                            <a href="#" class="menu__a">Promotions</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#" class="menu__a">Plein Air</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#" class="menu__a">Culturelle</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#" class="menu__a">Évènements</a>
-                        </li>
-                        <li class="menu__li">
-                            <a href="#" class="menu__a">Sports</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="entete__recherche">
-                    <form action="" class="recherche">
-                        <input type="text" class="recherche__input">
-                    </form>
-                </div>
-            </div>
+      <div class="entete global">
+        <img src="assets/img/logo-img.jpg" alt="" class="entete__logo">
+        <div class="entete__navigation">
+          <div class="navigation__recherche">
+            <input type="text" class="recherche__input" placeholder="Search...">
+          </div>
+          <nav class="menu">
+            <ul class="menu__contenu">
+              <li class="menu__li"><a href="#" class="menu__a">Promotions</a></li>
+              <li class="menu__li"><a href="#" class="menu__a">Reservation</a></li>
+              <li class="menu__li"><a href="#" class="menu__a">A Propos</a></li>
+              <li class="menu__li"><a href="#" class="menu__a">?venements</a></li>
+              <li class="menu__li"><a href="#" class="menu__a">Contactez-nous</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main>
-        <section class="texte-sur-image">
-            <div class="texte-sur-image__contenu global">
-                <figure class="texte-sur-image__img"><img src="assets/img/img-landscape.jpg" alt=""></figure>
-                <h1 class="texte-sur-image__texte">
-                    Trouver le voyage qui vous convient.
-                </h1>
-            </div>
-        </section>
-        <section class="hero">
-            <div class="hero__contenu"></div>
-        </section>
-        <section class="collection">
-            <article class="collection__carte">
-                <div class="carte__img"><img src="assets/img/img_promo1.jpg" alt=""></div>
-                <div class="carte__contenu">
-                    <h2 class="carte__titre"></h2>
-                    <p class="carte__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt quibusdam, minus fugiat maxime saepe exercitationem non eius voluptate expedita ullam velit tenetur necessitatibus incidunt ad est perferendis, voluptatum porro alias. Nisi molestiae minus accusantium, ut maxime id, quia dicta ratione, voluptas dolorem quibusdam non doloribus officia natus enim corporis?</p>
-                </div>
-            </article>
-            <article class="collection__carte">
-                <div class="carte__img"><img src="assets/img/img_promo2.jpg" alt=""></div>
-                <div class="carte__contenu">
-                    <h2 class="carte__titre"></h2>
-                    <p class="carte__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non molestiae quo rem fugit sint, repudiandae vitae distinctio ea, cum dignissimos obcaecati id reiciendis modi optio asperiores incidunt magni voluptate. Cupiditate fugiat, officiis aliquid eligendi, sequi voluptates explicabo recusandae ratione quae minima eos id vel magnam minus provident labore architecto!</p>
-                </div>
-            </article>
-            <article class="collection__carte">
-                <div class="carte__img"><img src="assets/img/img_promo3.jpg" alt=""></div>
-                <div class="carte__contenu">
-                    <h2 class="carte__titre"></h2>
-                    <p class="carte__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae architecto molestias fugiat ducimus aliquam dicta perferendis delectus eligendi blanditiis praesentium excepturi ullam nihil nobis veritatis qui, accusamus laboriosam fugit magni accusantium consequuntur quaerat modi iure dolores ipsam! Necessitatibus, ut architecto? Reprehenderit ad aspernatur odio nam totam quo ut porro officia!</p>
-                </div>
-            </article>
-            <article class="collection__carte">
-                <div class="carte__img"><img src="assets/img/img_promo4.jpg" alt=""></div>
-                <div class="carte__contenu">
-                    <h2 class="carte__titre"></h2>
-                    <p class="carte__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio atque molestias tempore voluptatum, velit reiciendis architecto voluptatibus sapiente cupiditate repellat blanditiis. Sed iste quos repudiandae enim, veniam eaque voluptatem suscipit alias adipisci libero sit corporis molestiae quas voluptates dolor repellat, doloribus fugiat obcaecati minus quis at consectetur rerum tempora.</p>
-                </div>
-            </article>
-        </section>
+      <section class="hero">
+        <div class="hero__conteneur">
+          <img
+            src="assets/img/img-landscape.jpg"
+            alt=""
+            class="hero__image"
+          >
+          <h1 class="hero__texte">
+            Trouver la destination de vos reves
+          </h1>
+        </div>
+      </section>
+      <section class="gallerie">
+        <div class="medaillon">
+          <div><img src="assets/img/img_promo1.jpg" alt="" class="medaillon_img"></div>
+          <h2 class="medaillon__titre">Destination</h2>
+          <p class="medaillon__texte">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam illum laboriosam a labore saepe harum provident quam, accusamus vitae sunt sint, hic laborum voluptates velit adipisci, culpa eum repellat! Cupiditate facere suscipit tenetur aliquid pariatur aliquam, ex vitae sed illum dignissimos animi mollitia, molestias asperiores? Ipsa aliquid sapiente voluptatem provident.</p>
+        </div>
+        <div class="medaillon">
+          <div><img src="assets/img/img_promo2.jpg" alt="" class="medaillon_img"></div>
+          <h2 class="medaillon__titre">Destination</h2>
+          <p class="medaillon__texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tenetur perferendis a tempora, ratione fugit placeat aut error, ipsa at ducimus doloribus totam illo reiciendis? Fuga voluptatibus vel sint voluptates placeat consectetur inventore iusto, ab est amet maxime ea aliquam molestias nulla similique delectus dicta! Ex fugit consequuntur expedita quisquam!</p>
+        </div>
+        <div class="medaillon">
+          <div><img src="assets/img/img_promo3.jpg" alt="" class="medaillon_img"></div>
+          <h2 class="medaillon__titre">Destination</h2>
+          <p class="medaillon__texte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam culpa dolor iste perspiciatis nulla a, iusto inventore veniam fuga reprehenderit laudantium porro, animi repellat libero architecto sint quisquam, reiciendis hic sequi! Iusto sunt non quisquam dolorum cum voluptas vero qui perspiciatis optio nemo. Et cupiditate ex molestias eius nisi incidunt?</p>
+        </div>
+        <div class="medaillon">
+          <div><img src="assets/img/img_promo4.jpg" alt="" class="medaillon_img"></div>
+          <h2 class="medaillon__titre">Destination</h2>
+          <p class="medaillon__texte">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit repellendus fugit, voluptatum odio exercitationem veniam, officiis delectus facilis cumque deleniti quasi vel atque ab quas aliquid beatae, non iste quaerat temporibus soluta! Nemo nam ipsam quaerat voluptas earum, minima accusantium cumque aliquid veniam quam deleniti numquam doloribus nisi quas ex.</p>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="pieds-de-page"></div>
+      <div class="pieds-de-page"></div>
     </footer>
-</body>
+  </body>
 </html>

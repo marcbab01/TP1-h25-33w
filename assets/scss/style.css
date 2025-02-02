@@ -1,26 +1,40 @@
 /* Les bases */
 /* Les composants */
 /* Les layouts */
-.entete {
-  display: flex;
+.texte-sur-image__conteneur {
+  position: relative;
+  text-align: center;
+  color: white;
 }
-.entete__nav {
-  display: flex;
+.texte-sur-image__texte {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 * {
   margin: 0;
   padding: 0;
-  width: 100vw;
 }
 
 img {
-  width: 100vw;
+  width: 100%;
 }
 
-.texte-sur-image__img > img {
-  width: 100vw;
-  height: 100vh;
+.gallerie {
+  display: flex;
+}
+
+.medaillon {
+  display: block;
+  flex-grow: 1;
+  max-width: 25vw;
+  margin: 30px;
+}
+
+.medaillon__img {
+  max-height: 300px;
 }
 
 /* Les variables *//*# sourceMappingURL=style.css.map */
