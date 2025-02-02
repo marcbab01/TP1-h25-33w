@@ -1,15 +1,16 @@
 .menu {
-    margin-left: 50px;
+
+    &__contenu {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.menu__contenu {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-.menu_li {
+.menu__li {
     flex-grow: 1;
+    padding: 10px;
 }
 
 .menu__a {

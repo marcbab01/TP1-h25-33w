@@ -1,7 +1,10 @@
 .entete {
-    padding: 20px;
 
     &__dessus {
         display: flex;
+    }
+
+    &__navigation {
+        background-color: lightblue;
     }
 }

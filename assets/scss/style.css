@@ -10,18 +10,21 @@ p, a {
 }
 
 /* Les composants */
-.menu {
-  margin-left: 50px;
+.colonne_contenu {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .menu__contenu {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu_li {
+.menu__li {
   flex-grow: 1;
+  padding: 10px;
 }
 
 .menu__a {
@@ -29,11 +32,25 @@ p, a {
 }
 
 /* Les layouts */
-.entete {
-  padding: 20px;
-}
 .entete__dessus {
   display: flex;
+}
+.entete__navigation {
+  background-color: lightblue;
+}
+
+.pieds-de-page {
+  padding: 30px;
+  background-color: lightblue;
+}
+.pieds-de-page__contenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pieds-de-page__colonne {
+  flex-grow: 1;
 }
 
 .hero__conteneur {

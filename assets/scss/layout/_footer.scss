@@ -1,0 +1,14 @@
+.pieds-de-page {
+    padding: 30px;
+    background-color: lightblue;
+
+    &__contenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.pieds-de-page__colonne {
+    flex-grow: 1;
+}
