@@ -1,0 +1,17 @@
+.menu {
+    margin-left: 50px;
+}
+
+.menu__contenu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu_li {
+    flex-grow: 1;
+}
+
+.menu__a {
+    text-decoration: none;
+}

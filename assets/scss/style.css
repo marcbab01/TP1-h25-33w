@@ -4,16 +4,36 @@ h1, h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-p {
+p, a {
   margin: 10px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* Les composants */
+.menu {
+  margin-left: 50px;
+}
+
+.menu__contenu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.menu_li {
+  flex-grow: 1;
+}
+
+.menu__a {
+  text-decoration: none;
+}
+
 /* Les layouts */
 .entete {
-  display: flex;
   padding: 20px;
+}
+.entete__dessus {
+  display: flex;
 }
 
 .hero__conteneur {

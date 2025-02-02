@@ -1,4 +1,7 @@
 .entete {
-    display: flex;
     padding: 20px;
+
+    &__dessus {
+        display: flex;
+    }
 }
