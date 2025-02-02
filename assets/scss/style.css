@@ -1,12 +1,27 @@
 /* Les bases */
+h1, h2 {
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  margin: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 /* Les composants */
 /* Les layouts */
-.texte-sur-image__conteneur {
+.entete {
+  display: flex;
+  padding: 20px;
+}
+
+.hero__conteneur {
   position: relative;
   text-align: center;
   color: white;
 }
-.texte-sur-image__texte {
+.hero__texte {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,17 +39,19 @@ img {
 
 .gallerie {
   display: flex;
+  justify-content: center;
 }
 
 .medaillon {
   display: block;
   flex-grow: 1;
-  max-width: 25vw;
-  margin: 30px;
+  max-width: 30vw;
+  margin: 10px;
 }
 
 .medaillon__img {
-  max-height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* Les variables *//*# sourceMappingURL=style.css.map */

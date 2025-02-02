@@ -1,10 +1,10 @@
 .medaillon {
     display: block;
     flex-grow: 1;
-    max-width: 25vw;
+    max-width: 30vw;
     margin: 10px;
 }
 
 .medaillon__img {
-    max-height: 300px;
+    object-fit: contain;
 }

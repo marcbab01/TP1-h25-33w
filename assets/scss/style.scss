@@ -1,5 +1,7 @@
 /* Les bases */
 
+@import "bases/_simple.scss";
+
 /* Les composants */
 
 @import "composants/_carte";
@@ -12,8 +14,8 @@
 @import "layout/_footer";
 @import "layout/_hero";
 @import "layout/_principal";
-@import "layout/gallerie";
-@import "layout/medaillon";
+@import "layout/_gallerie";
+@import "layout/_medaillon";
 
 /* Les variables */
 
