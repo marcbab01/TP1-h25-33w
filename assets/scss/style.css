@@ -38,6 +38,12 @@ p, a {
 .entete__navigation {
   background-color: lightblue;
 }
+@media screen and (max-width: 700px) {
+  .entete {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 
 .pieds-de-page {
   padding: 30px;
@@ -48,9 +54,17 @@ p, a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 700px) {
+  .pieds-de-page__contenu {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
 
 .pieds-de-page__colonne {
   flex-grow: 1;
+  padding: 10px;
 }
 
 .hero__conteneur {
@@ -63,6 +77,7 @@ p, a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: xx-large;
 }
 
 * {
@@ -78,12 +93,25 @@ img {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 700px) {
+  .gallerie {
+    flex-direction: column;
+    min-width: 700px;
+    flex-wrap: wrap;
+  }
+}
 
 .medaillon {
   display: block;
   flex-grow: 1;
   max-width: 30vw;
   margin: 10px;
+}
+@media screen and (max-width: 700px) {
+  .medaillon {
+    flex-direction: column;
+    min-width: 700px;
+  }
 }
 
 .medaillon__img {
