@@ -16,8 +16,9 @@
             <input type="text" class="recherche__input" placeholder="Search...">
           </div>
         </div>
-        <div class="entete__navigation">
-          <nav class="menu">
+      </div>
+    </header>
+    <nav class="menu">
             <ul class="menu__contenu">
               <li class="menu__li"><a href="#" class="menu__a">Promotions</a></li>
               <li class="menu__li"><a href="#" class="menu__a">Reservation</a></li>
@@ -25,7 +26,4 @@
               <li class="menu__li"><a href="#" class="menu__a">Evenements</a></li>
               <li class="menu__li"><a href="#" class="menu__a">Contactez-nous</a></li>
             </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    </nav>

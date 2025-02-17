@@ -1,0 +1,136 @@
+/*
+Theme Name: club-voyage
+Theme URI: https://referenced.ca
+Author: Marc-Olivier Babin
+Author URI: https://github.com/marcbab01
+Description: Thème de base développer dans le cadre du cours de Worpress
+Version: 1.0
+Tested up to: 6.2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: club-voyage
+*/
+
+/* Les bases */
+h1, h2 {
+    margin: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  p, a {
+    margin: 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  /* Les composants */
+  .colonne_contenu {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
+  .menu__contenu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu__li {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .menu__a {
+    text-decoration: none;
+  }
+  
+  /* Les layouts */
+  .entete__dessus {
+    display: flex;
+  }
+  .entete__navigation {
+    background-color: lightblue;
+  }
+  @media screen and (max-width: 700px) {
+    .entete {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .pieds-de-page {
+    padding: 30px;
+    background-color: lightblue;
+  }
+  .pieds-de-page__contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 700px) {
+    .pieds-de-page__contenu {
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+  
+  .pieds-de-page__colonne {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .hero__conteneur {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .hero__texte {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .gallerie {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 700px) {
+    .gallerie {
+      flex-direction: column;
+      min-width: 700px;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .medaillon {
+    display: block;
+    flex-grow: 1;
+    max-width: 30vw;
+    margin: 10px;
+  }
+  @media screen and (max-width: 700px) {
+    .medaillon {
+      flex-direction: column;
+      min-width: 700px;
+    }
+  }
+  
+  .medaillon__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  
+  /* Les variables *//*# sourceMappingURL=style.css.map */
