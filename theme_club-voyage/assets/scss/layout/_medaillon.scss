@@ -1,0 +1,15 @@
+.medaillon {
+    display: block;
+    flex-grow: 1;
+    max-width: 30vw;
+    margin: 10px;
+
+    @media screen and (max-width:700px) {
+        flex-direction: column;
+        min-width: 700px;
+    }
+}
+
+.medaillon__img {
+    object-fit: contain;
+}

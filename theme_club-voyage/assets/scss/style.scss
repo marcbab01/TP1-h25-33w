@@ -1,0 +1,22 @@
+/* Les bases */
+
+@import "bases/_simple.scss";
+
+/* Les composants */
+
+@import "composants/_colonne";
+@import "composants/_menu";
+@import "composants/_recherche";
+
+/* Les layouts */
+
+@import "layout/_entete";
+@import "layout/_footer";
+@import "layout/_hero";
+@import "layout/_principal";
+@import "layout/_gallerie";
+@import "layout/_medaillon";
+
+/* Les variables */
+
+@import "variables/_couleurs";

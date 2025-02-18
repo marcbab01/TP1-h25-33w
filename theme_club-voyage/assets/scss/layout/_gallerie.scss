@@ -1,0 +1,10 @@
+.gallerie {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width:700px) {
+        flex-direction: column;
+        min-width: 700px;
+        flex-wrap: wrap;
+    }
+}
