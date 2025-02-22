@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Principal</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <?php wp_head(); ?>
   </head>
   <body>
     <header>
       <div class="entete global">
         <div class="entete__dessus">
-          <img src="assets/img/logo-img.jpg" alt="" class="entete__logo" style="width: 100px; height: 100px;">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-img.jpg" alt="" class="entete__logo" style="width: 100px; height: 100px;">
           <div class="entete__recherche">
             <input type="text" class="recherche__input" placeholder="Search...">
           </div>

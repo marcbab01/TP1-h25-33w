@@ -4,10 +4,6 @@
         display: flex;
     }
 
-    &__navigation {
-        background-color: lightblue;
-    }
-
     @media screen and (max-width:700px) {
         flex-direction: column; 
         flex-wrap: wrap;
