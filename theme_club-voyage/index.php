@@ -26,6 +26,5 @@
           <p class="medaillon__texte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam culpa dolor iste perspiciatis nulla a, iusto inventore veniam fuga reprehenderit laudantium porro, animi repellat libero architecto sint quisquam, reiciendis hic sequi! Iusto sunt non quisquam dolorum cum voluptas vero qui perspiciatis optio nemo. Et cupiditate ex molestias eius nisi incidunt?</p>
         </div>
       </section>
-    </main>
-
+</main>
 <?php get_footer(); ?>

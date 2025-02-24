@@ -26,6 +26,22 @@
           <p class="medaillon__texte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam culpa dolor iste perspiciatis nulla a, iusto inventore veniam fuga reprehenderit laudantium porro, animi repellat libero architecto sint quisquam, reiciendis hic sequi! Iusto sunt non quisquam dolorum cum voluptas vero qui perspiciatis optio nemo. Et cupiditate ex molestias eius nisi incidunt?</p>
         </div>
       </section>
-    </main>
+      <section class="destinations-populaires">
+        <div class="destinations-populaires__tableau">
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <article class="destinations-populaires__post">
+                    <header>
+                        <?php if (has_post_thumbnail()) { ?>
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="image-mise-en-avant"> 
+                        <?php } ?>
+                        <h3><?php the_title(); ?></h3>
+                    </header>
+                    <p><?php echo wp_trim_words(get_the_excerpt(), 25, " ... "); ?></p> 
+                    <a href="<?php the_permalink(); ?>">Explorez les options</a>
+                </article>
+            <?php endwhile; endif; ?>
+        </div>
+      </section>
+</main>
 
 <?php get_footer(); ?>
