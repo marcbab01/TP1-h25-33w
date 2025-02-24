@@ -4,11 +4,11 @@
     <h1><?php printf(__('Résultats de recherche pour: %s', 'textdomain'), get_search_query()); ?></h1>
 
     <?php if (have_posts()) : ?>
-        <div class="recherche__tableau">
+        <div class="tableau">
             <?php
             
             while (have_posts()) : the_post(); ?>
-                <article class="recherche__element">
+                <article class="tableau__element">
                     <header>
                         <?php if (has_post_thumbnail()) { ?>
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
