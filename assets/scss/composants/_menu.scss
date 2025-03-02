@@ -1,18 +1,18 @@
+.menu-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f9c74f;
+    padding: 15px;
+}
+
 .menu {
-
-    &__contenu {
-        display: flex;
-        list-style-type: none;
-        align-items: center;
-        justify-content: center;
-    }
+    display: flex;
+    list-style-type: none;
 }
 
-.menu__li {
-    flex-grow: 1;
-    padding: 10px;
-}
-
-.menu__a {
+.menu-item>a {
     text-decoration: none;
+    font-size: 18px;
+    padding: 10px 12px;
 }

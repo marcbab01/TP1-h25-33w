@@ -3,40 +3,33 @@
         <div class="pieds-de-page__contenu">
           <div class="pieds-de-page__colonne">
             <h3>Trouvez-nous</h3>
-            <ul class="colonne_contenu">
-              <li class="colonne_li"><a href="" class="colonne__a">Canada</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Etats-Unis</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Europe</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Asie</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Afrique</a></li>
+            <ul class="colonne__contenu">
+            <?php
+              wp_nav_menu(array(
+                'theme_location' => 'footer-menu',
+                'container' => false,
+                'menu_class' => 'footer-menu',
+              ));
+            ?>
             </ul>
           </div>
           <div class="pieds-de-page__colonne">
             <h3>A Propos</h3>
-            <ul class="colonne_contenu">
-              <li class="colonne_li"><a href="" class="colonne__a">Notre Histoire</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Nos Promotions</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Notre Equipe</a></li>
+            <ul class="colonne__contenu">
+              <li class="colonne__li"><a href="" class="colonne__a">Contact: Marc-Olivier Babin - Conseiller</a></li>
+              <li class="colonne__li"><a href="" class="colonne__a">Adresse: 111 Rue Street, Mtl</a></li>
+              <li class="colonne__li"><a href="" class="colonne__a">Téléphone: 1 800 111 1111</a></li>
+              <li class="colonne__li"><a href="" class="colonne__a">Courriel: info@mondovoyages.com</a></li>
             </ul>
           </div>
           <div class="pieds-de-page__colonne">
             <h3>Contenu</h3>
-            <ul class="colonne_contenu">
-              <li class="colonne_li"><a href="" class="colonne__a">Option 1</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Option 2</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Option 3</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Option 4</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Option 5</a></li>
-            </ul>
-          </div>
-          <div class="pieds-de-page__colonne">
-            <h3>Contenu</h3>
-            <ul class="colonne_contenu">
-              <li class="colonne_li"><a href="" class="colonne__a">Option 1</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Option 2</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Option 3</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Option 4</a></li>
-              <li class="colonne_li"><a href="" class="colonne__a">Option 5</a></li>
+            <ul class="colonne__contenu">
+              <li class="colonne__li"><a href="" class="colonne__a">Option 1</a></li>
+              <li class="colonne__li"><a href="" class="colonne__a">Option 2</a></li>
+              <li class="colonne__li"><a href="" class="colonne__a">Option 3</a></li>
+              <li class="colonne__li"><a href="" class="colonne__a">Option 4</a></li>
+              <li class="colonne__li"><a href="" class="colonne__a">Option 5</a></li>
             </ul>
           </div>
         </div>

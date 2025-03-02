@@ -3,7 +3,6 @@
     &__conteneur {
         position: relative;
         text-align: center;
-        color: white;
     }
 
     &__texte {
@@ -11,6 +10,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: xx-large;
+        color: white;
+    }
+
+    &__image {
+        height: 50vh;
+        object-fit: cover;
+        filter: brightness(50%);
     }
 }

@@ -1,6 +1,5 @@
 /* Les bases */
-h1, h2 {
-  margin: 20px;
+h1, h2, h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -9,26 +8,53 @@ p, a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
 /* Les composants */
-.colonne_contenu {
+.colonne__contenu {
   list-style-type: none;
   text-decoration: none;
 }
 
-.menu__contenu {
+.colonne__li {
+  padding: 8px;
+}
+
+.menu-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f9c74f;
+  padding: 15px;
+}
+
+.menu {
   display: flex;
   list-style-type: none;
-  align-items: center;
-  justify-content: center;
 }
 
-.menu__li {
-  flex-grow: 1;
-  padding: 10px;
-}
-
-.menu__a {
+.menu-item > a {
   text-decoration: none;
+  font-size: 18px;
+  padding: 10px 12px;
+}
+
+.recherche {
+  display: flex;
+  align-items: center;
+}
+
+.recherche__champ {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
 }
 
 /* Les layouts */
@@ -52,7 +78,6 @@ p, a {
 .pieds-de-page__contenu {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 @media screen and (max-width: 700px) {
   .pieds-de-page__contenu {
@@ -70,14 +95,19 @@ p, a {
 .hero__conteneur {
   position: relative;
   text-align: center;
-  color: white;
 }
 .hero__texte {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: xx-large;
+  color: white;
+}
+.hero__image {
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(50%);
 }
 
 * {
@@ -89,15 +119,22 @@ img {
   width: 100%;
 }
 
-.gallerie {
-  display: flex;
-  justify-content: center;
+.gallerie__titre {
+  font-size: 30px;
+  margin: 30px;
+}
+.gallerie__contenu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
 }
 @media screen and (max-width: 700px) {
-  .gallerie {
-    flex-direction: column;
-    min-width: 700px;
-    flex-wrap: wrap;
+  .gallerie__contenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 10px;
   }
 }
 
@@ -110,7 +147,7 @@ img {
 @media screen and (max-width: 700px) {
   .medaillon {
     flex-direction: column;
-    min-width: 700px;
+    min-width: 500px;
   }
 }
 
