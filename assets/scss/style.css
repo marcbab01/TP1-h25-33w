@@ -17,6 +17,10 @@ h2 {
 }
 
 /* Les composants */
+.carte > * {
+  padding: 15px;
+}
+
 .colonne__contenu {
   list-style-type: none;
   text-decoration: none;
@@ -26,10 +30,15 @@ h2 {
   padding: 8px;
 }
 
+.colonne__a {
+  text-decoration: none;
+}
+
 .menu-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: #f9c74f;
   padding: 15px;
 }
@@ -48,6 +57,7 @@ h2 {
 .recherche {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .recherche__champ {
@@ -92,6 +102,10 @@ h2 {
   padding: 10px;
 }
 
+.footer-menu {
+  list-style-type: none;
+}
+
 .hero__conteneur {
   position: relative;
   text-align: center;
@@ -104,7 +118,7 @@ h2 {
   color: white;
 }
 .hero__image {
-  height: 50vh;
+  height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(50%);
@@ -119,6 +133,10 @@ img {
   width: 100%;
 }
 
+.contenu {
+  margin: 30px;
+}
+
 .gallerie__titre {
   font-size: 30px;
   margin: 30px;
@@ -128,6 +146,8 @@ img {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 @media screen and (max-width: 700px) {
   .gallerie__contenu {
@@ -135,9 +155,30 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-row-gap: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
+.grille {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .grille {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 .medaillon {
   display: block;
   flex-grow: 1;

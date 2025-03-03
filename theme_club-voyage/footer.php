@@ -33,6 +33,13 @@
             </ul>
           </div>
         </div>
+        <form role="search" method="get" class="recherche" action="<?php echo home_url('/'); ?>">
+          <label>
+            <span><?php echo _x('Search for:', 'label') ?></span>
+            <input type="search" class="recherche__champ" placeholder="<?php echo esc_attr_x('Rechercher des destinations...', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" />
+          </label>
+          <button type="submit" class="recherche__btn"><?php echo esc_html_x('Search', 'submit button') ?></button>
+        </form>
       </div>
     </footer>
     <?php wp_footer(); ?>
