@@ -11,12 +11,14 @@
                 <h1 class="error-404__titre"><?php echo $error_404_titre ?></h1>
                 <p class="error-404__message"><?php echo $error_404_message ?></p>
                 <a href="<?php echo $error_404_homeLink ?>" class="error-404__link">Retour a l'accueil</a>
-                <div class="error-404__boutons">
-                  <a href="" class="error-404__link _bouton">Alaska</a>
-                  <a href="" class="error-404__link _bouton">Haiti</a>
-                  <a href="" class="error-404__link _bouton">Egypte</a>
-                  <a href="" class="error-404__link _bouton">France</a>
-                </div>
+                <?php
+                    wp_nav_menu(array(
+                    'menu' => 'principal',
+                    'theme_location' => '404-menu',
+                    'menu_class' => 'error-404__boutons',
+                    'container' => false,
+                    ));
+                ?>
                 <form action="" class="error-404__form">
                   <input type="search" class="error-404__search" placeholder="Rechercher...">
                 </form>

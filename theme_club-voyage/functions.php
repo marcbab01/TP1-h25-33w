@@ -12,9 +12,15 @@ function register_setup() {
     register_nav_menus(array(
         'main-menu' => __('Menu Principal'),
         'footer-menu' => __('Menu Pied de Page'),
+        '404-menu' => __('Menu Error 404'),
     ));
 }
 add_action('after_setup_theme', 'club_de_voyage_setup');
+
+function register_my_menu() {
+    register_nav_menu('error-404-menu', __('Menu 404', 'theme_31w'));
+}
+add_action('after_setup_theme', 'register_my_menu');
 
 $functions_dir = get_template_directory() . '/functions/';
 include_once $functions_dir . 'customizer.php';
