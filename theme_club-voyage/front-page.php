@@ -2,27 +2,30 @@
 
 <main>
 <?php
-$hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
-$hero_telephone = get_theme_mod('hero_telephone', 'Default Title');
-$hero_background = get_theme_mod('hero_background', 'Default Title');
+$hero__titre = get_theme_mod('hero__titre', 'Default Title');
+$hero__message = get_theme_mod('hero__message', 'Default Title');
+$hero__courriel = get_theme_mod('hero__courriel', 'Default Title');
+$hero__auteur = get_theme_mod('hero__auteur', 'Default Title');
+$hero__telephone = get_theme_mod('hero__telephone', 'Default Title');
+$hero__background = get_theme_mod('hero__background', 'Default Title');
 ?>
 <style>
     .hero__couleur {
         color: <?php echo get_theme_mod('hero_couleur', '#000000'); ?>;
     }
 </style>
-      <section class="hero" style="background-image: url('<?php echo $hero_background; ?>')">
+      <section class="hero" style="background-image: url('<?php echo $hero__background; ?>')">
         <div class="hero__conteneur">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-landscape.jpg" alt=""class="hero__image">
           <div class="hero__texte">
-            <h1>Trouver la destination de vos reves</h1>
-            <p>Choisissez votre destination de rêves pour un voyage inoubliable. Que vous soyez à la recherche d'un avre de paix aux vues paradisiaques, ou à la recherche du aventure stimulante dans une contrée étrangère, nous nous engagons à vous faire vivre une expérience mémorable.</p>
+            <h1 class="hero__titre"><?php echo $hero__titre ?></h1>
+            <p class="hero__message"><?php echo $hero__message ?></p>
             <br>
-            <p>info@mondovoyages.com</p>
+            <p class="hero__courriel"><?php echo $hero__courriel ?></p>
             <br>
-            <p class="hero__auteur">Auteur: <?php echo $hero_auteur; ?></p>
+            <p class="hero__auteur">Auteur: <?php echo $hero__auteur; ?></p>
             <br>
-            <p class="hero__auteur">Telephone: <?php echo $hero_telephone; ?></p>
+            <p class="hero__telephone">Telephone: <?php echo $hero__telephone; ?></p>
             <br>
             <p>111 Rue Street, Montréal H1Z 2Z4</p>
             <section class="hero__sociaux">
@@ -66,7 +69,7 @@ $hero_background = get_theme_mod('hero_background', 'Default Title');
         <?php categories_liste("destination") ?>
         <h2 class="destination__titre">Articles de la catégorie</h2>
         <div class="destination__list"></div>
-    </section>
+      </section>
     </main>
 
 <?php get_footer(); ?>
