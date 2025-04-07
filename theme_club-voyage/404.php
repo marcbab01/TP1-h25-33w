@@ -20,7 +20,7 @@
                     ));
                 ?>
                 <form action="" class="error-404__form">
-                  <input type="search" class="error-404__search" placeholder="Rechercher...">
+                  <input type="search" class="error-404__search" placeholder="<?php echo esc_attr_x('Rechercher...', 'placeholder') ?>">
                 </form>
             </div>
         </section>
