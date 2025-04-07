@@ -1,0 +1,68 @@
+.error-404__section {
+    background-image: url("../../img/ilepalmier.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.error-404__conteneur {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    text-align: center;
+    align-items: center;
+}
+
+.error-404__titre, .error-404__message {
+    padding: 20px;
+    background-color:  rgba(245, 254, 253, 0.425);
+    color: #FDD835;
+}
+
+.error-404__titre {
+    font-size: 4rem;
+}
+
+.error-404__link {
+    background-color: #FDD835;
+    color: lightblue;
+    font-size: 24px;
+    padding: 10px;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 5px;
+
+    &._bouton {
+        color: darkblue;
+    }
+}
+
+.error-404__boutons {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-404__search {
+    padding: 8px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.056);
+    color: #FDD835;
+}
+
+@media screen and (max-width:700px) {
+
+    .error-404__titre, .error-404__message {
+        width: 75vw;
+    }
+
+    .error-404__boutons {
+        width: 70vw;
+        flex-wrap: wrap;
+    }
+}
