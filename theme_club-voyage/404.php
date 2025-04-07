@@ -6,11 +6,11 @@
         $error_404_message = get_theme_mod('error-404__message', __("Pas de panique, cher membre explorateur ! Vous avez dérivé un peu trop loin des destinations de rêve que notre club a soigneusement sélectionnées pour vous. Reprenez votre périple en cliquant sur 'Accueil' pour découvrir à nouveau nos voyages d’exception !", 'theme_31w'));
         $error_404_homeLink = get_theme_mod('error-404__homeLink', home_url());
     ?>
-    <section class="error-404__section" style='background-image: url("assets/img/ilepalmier.jpg");'>
+    <section class="error-404__section" style="background-image: url('<?php echo $error_404_background ?>');">
             <div class="error-404__conteneur">
-                <h1 class="error-404__titre">Oops, vous avez échoué sur l'île 404 !</h1>
-                <p class="error-404__message">Pas de panique, cher membre explorateur ! Vous avez dérivé un peu trop loin des destinations de rêve que notre club a soigneusement sélectionnées pour vous. Reprenez votre périple en cliquant sur 'Accueil' pour découvrir à nouveau nos voyages d’exception !</p>
-                <a href="" class="error-404__link">Retour a l'accueil</a>
+                <h1 class="error-404__titre"><?php echo $error_404_titre ?></h1>
+                <p class="error-404__message"><?php echo $error_404_message ?></p>
+                <a href="<?php echo $error_404_homeLink ?>" class="error-404__link">Retour a l'accueil</a>
                 <div class="error-404__boutons">
                   <a href="" class="error-404__link _bouton">Alaska</a>
                   <a href="" class="error-404__link _bouton">Haiti</a>
